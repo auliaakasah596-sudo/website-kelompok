@@ -1,0 +1,350 @@
+/* Styling Dasar */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Header dan Navigasi */
+
+header {
+    background: linear-gradient(90deg, #4f8cff 60%, #6ee7b7 100%);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Hero Section */
+
+#hero {
+    background: #e0f2fe;
+    padding: 60px 0 40px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-cta {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.15);
+    transition: background 0.2s;
+}
+
+.btn-cta:hover {
+    background: #2563eb;
+}
+
+.hero-img img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(79,140,255,0.08);
+}
+
+
+/* Produk Section */
+
+#produk {
+    padding: 50px 0;
+}
+
+.produk-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produk-item {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.08);
+    padding: 32px 24px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.produk-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(79,140,255,0.15);
+}
+
+.produk-icon {
+    width: 64px;
+    margin-bottom: 18px;
+}
+
+.btn-pesan {
+    background: #6ee7b7;
+    color: #222;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-pesan:hover {
+    background: #4f8cff;
+    color: #fff;
+}
+
+
+/* Tim Section */
+
+#tim {
+    background: #f1f5f9;
+    padding: 50px 0;
+}
+
+.tim-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tim-anggota {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.08);
+    padding: 28px 18px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tim-anggota:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(79,140,255,0.12);
+}
+
+.tim-foto {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.12);
+}
+
+
+/* Pembayaran Section */
+
+#pembayaran {
+    background: #f7f9fc;
+    padding: 40px 0 30px 0;
+}
+
+.pembayaran-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pembayaran-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(79,140,255,0.07);
+    padding: 24px 18px;
+    text-align: center;
+    width: 260px;
+    transition: transform 280ms cubic-bezier(.2,.9,.3,1), box-shadow 280ms, filter 280ms;
+    cursor: pointer;
+}
+
+.pembayaran-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 14px 40px rgba(79,140,255,0.16);
+    filter: brightness(1.02);
+}
+
+.pembayaran-item img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.10);
+    transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.pembayaran-item:hover img {
+    transform: translateY(-6px) rotate(-2deg) scale(1.04);
+}
+
+/* Fokus keyboard untuk aksesibilitas (opsional) */
+.pembayaran-item:focus { outline: none; }
+.pembayaran-item:focus-visible {
+    box-shadow: 0 10px 30px rgba(79,140,255,0.18);
+    transform: translateY(-8px) scale(1.02);
+}
+
+
+/* Footer */
+
+footer {
+    background: #4f8cff;
+    color: #fff;
+    padding: 24px 0 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sosmed {
+    margin-top: 10px;
+}
+
+.sosmed a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.sosmed a:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 900px) {
+    .hero-content, .produk-grid, .tim-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .produk-item, .tim-anggota {
+        width: 90%;
+        max-width: 350px;
+    }
+    .hero-img img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .container, .container {
+        width: 98%;
+        padding: 0 6px;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    nav ul {
+        gap: 14px;
+        font-size: 0.95rem;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    .hero-img img {
+        width: 90vw;
+        max-width: 320px;
+        margin-top: 18px;
+    }
+    .produk-grid, .tim-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .produk-item, .tim-anggota {
+        width: 98%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+    .btn-cta, .btn-pesan {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    footer {
+        font-size: 0.95rem;
+        padding: 18px 0 6px 0;
+    }
+    .sosmed img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pembayaran-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .pembayaran-item {
+        width: 98%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+}
